@@ -1,0 +1,9 @@
+CMTS1#configure terminal 
+Enter configuration commands, one per line.  End with CNTL/Z. 
+CMTS1(config)#interface cable 1/0 
+CMTS1(config-if)#cable downstream frequency 114000000 
+CMTS1(config-if)# 
+*Mar 12 09:33:28.011: %UPCONV-5-DSFREQ: interface Cable1/0 Downstream frequency set to 114.0 Mhz 
+CMTS1(config-if)#no shutdown 
+CMTS1(config-if)#cable upstream 0 frequency 32000000 
+CMTS1(config-if)#no cable upstream 0 shutdown 

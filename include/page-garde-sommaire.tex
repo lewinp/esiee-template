@@ -1,0 +1,77 @@
+\begin{titlepage}
+  \noindent
+  \begin{minipage}{0.35\linewidth}
+    \includegraphics[height=65pt]{images/logoESIEE}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[c][65pt][t]{0.35\linewidth}
+    \hspace{\fill}
+    \reportdate
+  \end{minipage}
+  \vfill
+
+  \begin{center}
+    \large
+    {
+      \textbf{\textsc{\reporttitle}}
+      \bigskip
+	
+      \textit{\reportsubtitle}
+      \bigskip
+      \bigskip
+    }
+  \end{center}
+
+  \vfill
+
+  \begin{flushright}
+    \begin{large}
+      \textbf{\authorgroup}
+      \hspace{2pt}
+	
+      \rule{0.5\linewidth}{1pt}
+
+	  \ifdefempty{\reportauthora}{}{
+	    
+	    \medskip
+        \reportauthora
+	  }
+	  \ifdefempty{\reportauthorb}{}{
+	    
+	    \medskip
+        \reportauthorb
+	  }
+	  \ifdefempty{\reportauthorc}{}{
+	    
+	    \medskip
+        \reportauthorc
+	  }
+	  \ifdefempty{\reportauthord}{}{
+	    
+	    \medskip
+        \reportauthord
+	  }
+	  
+	\end{large}
+  \end{flushright}
+
+  \bigskip
+
+  \vfill\vfill
+	
+  \hfill
+  \includegraphics[scale=1.45]{images/logoCCIP}
+	
+  % Ne pas compter cette page dans la numérotation
+  \setcounter{page}{0}
+
+  % Masquer le numéro de page en bas de la page de garde
+  \thispagestyle{empty}
+	
+  \pagebreak
+	
+  \pagestyle{toc-style}
+  \tableofcontents
+  \label{Sommaire}
+
+\end{titlepage}

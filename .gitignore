@@ -1,0 +1,8 @@
+.texlipse
+document.pdf
+texput.log
+tmp/document.aux
+tmp/document.log
+tmp/document.out
+tmp/document.toc
+.project

@@ -1,0 +1,98 @@
+
+\usepackage[hmargin=2.5cm, vmargin=2.5cm]{geometry}
+\usepackage{fancyhdr}
+
+\usepackage{pdflscape}
+
+\usepackage{mathptmx}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{multicol}
+
+\usepackage{graphicx} % Pour insérer des images
+\usepackage{wrapfig}  % Pour insérer des images dans des paragraphes
+\usepackage{float}    % Pour utiliser floatplacement
+
+% Packages pour les tableaux
+\usepackage{colortbl} % Pour colorier les tableaux
+%\usepackage{multirow} % Pour fusionner des lignes
+%\usepackage{slashbox} % Pour faire des bordures diagonales
+%\usepackage{array}    % Pour utiliser !{séparateur} et @{séparateur}
+%\usepackage{tabularx} % Pour faire des tableaux de la largeur de la page
+
+% Packages pour le code
+%\usepackage{verbatim}     % Pour écrire des blocs de code
+%\usepackage{moreverb}     % Pour indenter les blocs de code
+\usepackage{listingsutf8} % Pour mettre en forme du code
+
+% Autres packages
+\usepackage{url}      % Pour mettre des liens hypertextes
+\usepackage{eurosym}  % Pour utiliser le symbole euro avec \euro{}
+\usepackage{layout}   % Pour afficher les marges du document avec \layout
+\usepackage{lastpage} % Pour avoir le nombre total de pages
+\usepackage{hyperref} % Permet de rendre le PDF navigable
+
+\usepackage{etoolbox} % ifdefempty
+
+\usepackage{pgffor}
+
+% Définition de la coloration syntaxique
+%\lstset{language=sh}
+%\lstset{tabsize=4}
+%\lstset{frame=single}
+%\lstset{breaklines=true}
+%\lstset{showstringspaces=false}
+%\lstset{basicstyle=\footnotesize}
+%\lstset{escapeinside={>>*}{*<<}}
+%\lstset{inputencoding=utf8/latin1}
+%\lstset{deletekeywords={if, for, read, unset, history}}
+
+% Définition des en-têtes et pieds de page
+\setlength{\headheight}{15pt}
+\fancypagestyle{toc-style}
+{
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\footrulewidth}{1pt}
+	\lhead{\textbf{\csname @title\endcsname}}
+	\chead{}
+	\rhead{}
+	\lfoot{\textit{\csname @author\endcsname}}
+	\cfoot{}
+	\rfoot{\textbf{Table des matières}}
+}
+
+\fancypagestyle{page-style}
+{
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\footrulewidth}{1pt}
+	\lhead{\textbf{\csname @title\endcsname}}
+	%\lhead{\textbf{\hyperref[Sommaire]{\csname @title\endcsname}}} % Avec hyperref
+	\chead{}
+	\rhead{}
+	\lfoot{\textit{\csname @author\endcsname}}
+	\cfoot{}
+	\rfoot{\textbf{Page \thepage{} sur \pageref{LastPage}}}
+	%\rfoot{\textbf{Page \thepage{} sur \pageref*{LastPage}}} % Avec hyperref
+}
+
+% Définition des couleurs
+\definecolor{grisClair}{rgb}{0.75, 0.75, 0.75}
+%\setlength\parindent{0pt}
+
+
+\usepackage{listings} 
+\usepackage{inconsolata} 
+\usepackage{blindtext,expdlist} 
+
+\lstdefinelanguage{CISCO} 
+{ 
+  sensitive=true, 
+  morekeywords=[1]{},
+  tabsize=4,
+  frame=single,
+  breaklines=true,
+  showstringspaces=false,
+  basicstyle=\ttfamily\scriptsize,
+  escapeinside={>>*}{*<<},
+  inputencoding=utf8/latin1,
+} 
