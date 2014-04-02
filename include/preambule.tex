@@ -9,6 +9,8 @@
 \usepackage{setspace}
 \usepackage{multicol}
 
+\usepackage{minted}
+
 \usepackage{graphicx} % Pour insérer des images
 \usepackage{wrapfig}  % Pour insérer des images dans des paragraphes
 \usepackage{float}    % Pour utiliser floatplacement
@@ -95,4 +97,26 @@
   basicstyle=\ttfamily\scriptsize,
   escapeinside={>>*}{*<<},
   inputencoding=utf8/latin1,
-} 
+}
+
+\lstdefinestyle{bash}
+{
+  language=bash,
+  keywordstyle=\color{blue},
+  basicstyle=\ttfamily\scriptsize,
+  frame=single,
+  inputencoding=utf8/latin1,
+  morekeywords={pc5008j},
+  alsoletter={:~$},
+  morekeywords=[2]{peter@kbpet:},
+  keywordstyle=[2]{\color{red}},
+  literate={\$}{{\textcolor{red}{\$}}}1 
+           {:}{{\textcolor{red}{:}}}1
+           {~}{{\textcolor{red}{\textasciitilde}}}1,
+}
+
+\lstdefinestyle{compact}
+{
+  basicstyle=\ttfamily\scriptsize,
+  frame=single,
+}

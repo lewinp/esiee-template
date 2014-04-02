@@ -3,8 +3,15 @@ PACKAGES_FR=texlive-lang-french
 
 all:
 	-rm document.pdf
-	pdflatex --output-directory tmp document.tex
-	mv tmp/document.pdf ./document.pdf
+	pdflatex -shell-escape document.tex
+
+clean:
+	-rm document.aux
+	-rm document.log
+	-rm document.out
+	-rm document.pdf
+	-rm document.pyg
+	-rm document.toc
 
 latex-install:
 	sudo apt-get install $(PACKAGES) $(PACKAGES_FR)

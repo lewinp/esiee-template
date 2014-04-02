@@ -5,4 +5,10 @@ tmp/document.aux
 tmp/document.log
 tmp/document.out
 tmp/document.toc
+tmp/document.pyg
+document.aux
+document.log
+document.out
+document.toc
+document.pyg
 .project
