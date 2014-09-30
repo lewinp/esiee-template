@@ -1,4 +1,4 @@
-PACKAGES=texlive texlive-extra-utils texlive-fonts-extra texlive-latex-extra
+PACKAGES=texlive texlive-extra-utils texlive-fonts-extra texlive-latex-extra python-pygments
 PACKAGES_FR=texlive-lang-french
 
 all:
